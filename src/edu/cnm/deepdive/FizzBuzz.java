@@ -1,23 +1,31 @@
 package edu.cnm.deepdive;
 
 public class FizzBuzz {
-  public static void main (String[] args){
-    System.out.println(aResult());
+
+  private static final int DEFAULT_ROOF = 100;
+
+  public static void main(String[] args) {
+
+    int roof = ;
+  for (int i = 0; i <= roof; ++1){
+    System.out.println(toString(i));
   }
-  public static String aResult() {
+  }
+
+  public static String toString(int num) {
     String result;
-    for (int i = 1; i <= 100; ++i){
-      if ( i % 3 == 0 && i % 5 == 0){
-        System.out.println("FizzBuzz");
-      } else if (i % 5 == 0) {
-        System.out.println("Buzz");
-      } else if (i % 3 == 0) {
-        System.out.println("Fizz");
-      }else {
-        System.out.println(i);
-      }
+
+    if (num % 3 == 0 && num % 5 == 0) {
+      result = "FizzBuzz";
+    } else if (num % 5 == 0) {
+      result = "Buzz";
+    } else if (num % 3 == 0) {
+      result = "Fizz";
+    } else {
+      result = String.valueOf(num);
     }
-    return "";
+
+    return result;
 
   }
 
